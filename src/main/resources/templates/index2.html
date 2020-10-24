@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Computational Mathematics</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link rel="stylesheet" href="/css/main.css" disabled="disabled">
+     <link rel="stylesheet" href="/css/cssIndex2.css" disabled="disabled">
+     <link rel="stylesheet" href="/css/cssIndex3.css">
+</head>
+<body>
+	<h1 class="h1">Functions and relations</h1>
+	<div class="container container-padding50">
+    <form name="form1" action="#" onsubmit="required()" th:action="@{/expression}" th:object="${expression}" method="post">
+
+	   
+
+        <p><input id="text1" type="text" th:field="*{content1}" placeholder="Write the domain" class="container1-textinput"/><!--   />-->
+        </p>
+        <p><input id="text1" type="text" th:field="*{content2}" placeholder="Write the codomain" class="container2-textinput"/><!--  />-->
+        </p>
+        <input id="text1" type="text" th:field="*{content3}" placeholder="Write your expression as (a,b),(c,d)... " class="container2-textinput"/><!--  />-->
+        </p>
+  		<div class="container move">
+				
+	        <input type="submit"  name="action" value="Calculate" />
+	    
+	    </div>
+    </form>
+    
+    </div>
+    <div>
+    <p>Instructions: Write elements(separate by commas) that represents the domain and the codomain in every box.</p>
+	</div>
+</body>
+</html>

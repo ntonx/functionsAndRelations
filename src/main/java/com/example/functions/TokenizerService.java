@@ -46,6 +46,25 @@ public class TokenizerService {
 		 return operandList;//.stream().distinct().collect(Collectors.toList());
 		 
 	}
+
+	public List<String> getElementsFromPairs(String expresion3) {
+		List<String> operatorList = new ArrayList<String>();
+		 List<String> operandList = new ArrayList<String>();
+	 
+		 StringTokenizer st = new StringTokenizer(expresion3, "[](), ", true);
+		 while (st.hasMoreTokens()) {
+		    String token = st.nextToken();
+
+		    if ("[](), ".contains(token)) {
+		       operatorList.add(token);
+		    } else {
+		       operandList.add(token);
+		    }
+		 }
+//		 System.out.print(operandList);
+		 return operandList;//.stream().distinct().collect(Collectors.toList());
+		 
+	}
 }
 
 

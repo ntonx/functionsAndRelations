@@ -3,32 +3,35 @@
 <head> 
     <title>Computational Mathematics</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link th:href="@{/css/main.css}" rel="stylesheet" />
-    <script type="text/javascript" th:src="@{/js/actions.js}"></script>
+     <link rel="stylesheet" href="/css/main.css" disabled="disabled"/>
+     <link rel="stylesheet" href="/css/main3.css"disabled="disabled"/>
+     <link rel="stylesheet" href="/css/mycss.css"/>
 </head>
 <body>
-	<h1 class="h1">Sets operations</h1>
+	<h1 class="h1">Functions and relations</h1>
 	<div class="container container-padding50">
     <form name="form1" action="#" onsubmit="required()" th:action="@{/}" th:object="${mystatement}" method="post">
 
 	   
 
-        <p><input id="text1" type="text" th:field="*{content1}" placeholder="Set A" class="container1-textinput"/><!--   />-->
+        <p><input id="text1" type="text" th:field="*{content1}" placeholder="Write the domain" class="container1-textinput"/><!--   />-->
         </p><p>
-        <input id="text1" type="text" th:field="*{content2}" placeholder="Set B" class="container2-textinput"/><!--  />-->
+        <input id="text1" type="text" th:field="*{content2}" placeholder="Write the codomain" class="container2-textinput"/><!--  />-->
         </p>
-  
-		<input type="submit" name="action" value="relations" /> 
-		<input type="submit" name="action" value="functions" /> 
-		<input type="submit" name="action" value="injectives" /> 
-		<input type="submit" name="action" value="surjectives" /> 
-		<input type="submit" name="action" value="bijectives" /> 		
-        <input type="reset"  name="action" value="evaluate" />
+  		<div class="container move">
+			<input type="submit" name="action" value="Relations" /> 
+			<input type="submit" name="action" value="Functions" /> 
+			<input type="submit" name="action" value="Injectives" /> 
+			<input type="submit" name="action" value="Surjectives" /> 
+			<input type="submit" name="action" value="Bijections" /> 		
+	        <input type="submit"  name="action" value="Evaluate" />
+	    
+	    </div>
     </form>
     
     </div>
     <div>
-    <p>Instructions: Write a sentence that represents a set in every box.</p>
+    <p>Instructions: Write elements(separate by commas) that represents the domain and the codomain in every box.</p>
 	</div>
 </body>
 </html>
