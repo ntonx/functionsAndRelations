@@ -390,7 +390,6 @@ public class AnalyzerService {
 	}
 
 	
-	
 	public boolean checkContent(final List<String> list1, final List<String> list2) {
 	    // (list1, list1) is always true
 	    if (list1 == list2) return true;
@@ -426,101 +425,6 @@ public class AnalyzerService {
 
 
 }
-
-
-
-
-
-
-
-
-//private void analizeListRespaldo(List<List<String>> relations, List<String> domain, List<String> codomain) {
-//	List<String> oneRelation=new ArrayList<>();
-//	List<String> result=new ArrayList<>();
-//	for (int i=0;i<7/*relations.size()*/;i++) {
-//		//the 0 is for the set
-//		oneRelation = relations.get(i);
-// 		result.add(oneRelation.toString());
-// 		//1 is for RELATION. is relation, obviously cause it comes from relation function
-//// 		oneRelation.add("true");
-// 		result.add("true");
-// 		//2 is for FUNCTIONS....is function.. it get values as injective function;
-// 		Boolean isFunction= isFunction(oneRelation,domain);
-//// 		oneRelation.add(String.valueOf(isFunction));
-// 		result.add(String.valueOf(isFunction));
-// 		//3 is INJECTIVE
-// 		if(!isFunction) {
-//// 			oneRelation.add("false");//not injective
-// 			result.add("false");
-// 			result.add("false");
-// 			result.add("false");
-//// 			oneRelation.add("false");//not supra
-////    			oneRelation.add("false");//not bi
-// 		}else {
-// 		Boolean isInjective= isInjective(oneRelation,domain);
-//// 		oneRelation.add(String.valueOf(isInjective));
-// 		result.add(String.valueOf(isInjective));
-// 		//add other booleans functions results
-// 		Boolean isSupra= isSupra(oneRelation,domain,codomain);
-//// 		oneRelation.add(String.valueOf(isSupra));
-// 		result.add(String.valueOf(isSupra));
-// 		//if injective&supra->bi
-//     		if(isInjective&&isSupra) {
-//     			result.add("true");
-////     			oneRelation.add("true");
-//     		}
-// 		}
-////		System.out.println(result);
-////		System.out.println("injective"+isInjective);
-//	}
-//	
-//
-//}
-
-
-
-
-
-
-//public String evaluateExpression1(List<String> myinput, AnalyzerService analyzer) {
-//	this.relations=analyzer.relations;
-//	
-//	List<String> myinputPair = new ArrayList<>();
-//	List<String> pairs = new ArrayList<>();
-//	
-//	for(int i=0;i<myinput.size();i=i+2) {
-//		myinputPair.add("("+myinput.get(i)+","+myinput.get(i+1)+")");
-//	}
-//	System.out.println(myinputPair);
-//	
-//	List<String> myRelationsPair = new ArrayList<>();
-//	
-//	for(int i=0;i<relations.size();i++) {
-//		String value =String.valueOf(relations.get(i).get(0).toString());
-////
-//
-//		if(value.equals("[]")) {
-//			
-//		}else {
-//			value = changeBracket(value);
-//			value =value.replaceAll("\\s","");
-//	//		System.out.println(value);
-//			List<String> pairs1 = tokenService.getPairs(value);
-//			System.out.println(pairs1);
-//		/*	if(pairs.size()==0) {}
-//		else {
-//			myRelationsPair.add("("+myinput.get(i)+","+myinput.get(i+1)+")");
-//		}
-//	*/	}
-//	}
-//	
-//	return "ok";
-//	
-//}
-
-
-
-
 
 
 

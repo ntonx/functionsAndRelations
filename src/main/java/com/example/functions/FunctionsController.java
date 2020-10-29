@@ -90,10 +90,6 @@ public class FunctionsController {
 			String expresion1 = expression.content1;
 			String expresion2 =expression.content2;
 			String expresion3 =expression.content3;
-			
-			System.out.println(expresion1);
-			System.out.println(action);
-			 
 			tokenService = new TokenizerService();
 			List<String> domain = tokenService.getOperands(expresion1);
 			List<String> codomain = tokenService.getOperands(expresion2);	
